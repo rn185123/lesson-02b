@@ -36,7 +36,7 @@ lists:
   - action: copy
     parameters:
       set.ext.response.status.code: 200
-      set.ext.response.body#0#.id: 1234898989
+      set.ext.response.body#0#.id: 123480000
       set.ext.response.body#0#.type: checking
       set.ext.response.body#0#.label: My checking account
       set.ext.response.body#0#.balance: 50000

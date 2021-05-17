@@ -2,7 +2,7 @@
 swagger: "2.0"
 info:
   version: 1.0-SNAPSHOT
-  title: “lesson 2”
+  title: ?lesson 2?
 basePath: /v1
 paths:
   /accounts/{id}:
@@ -33,7 +33,7 @@ paths:
          200:
            description: empty response
     get:
-      description: Customer Id
+      description: Customer Id updated
       operationId: accounts/queryAccounts
       consumes:
        - application/json
