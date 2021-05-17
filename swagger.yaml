@@ -1,0 +1,49 @@
+---
+swagger: "2.0"
+info:
+  version: 1.0-SNAPSHOT
+  title: “lesson 2”
+basePath: /v1
+paths:
+  /accounts/{id}:
+    get:
+      description: Get balance.
+      operationId: accounts/getBalance
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: path
+        name: id
+        required: true
+        type: integer
+      responses:
+        200:
+          description: empty response
+  /accounts:
+    post:
+      description: Create Account
+      operationId: accounts/createAccount
+      consumes:
+       - application/json
+      produces:
+       - application/json
+      responses:
+         200:
+           description: empty response
+    get:
+      description: Customer Id
+      operationId: accounts/queryAccounts
+      consumes:
+       - application/json
+      produces:
+       - application/json
+      parameters:
+      - in: query
+        name: customerId
+        type: integer
+        description: Customer Id
+      responses:
+         200:
+           description: empty response
